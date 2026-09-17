@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourour Noumri | Ingénieure en Génie Logiciel - Portfolio</title>
+  <meta name="description" content="Portfolio professionnel de Sourour Noumri, Ingénieure en Génie Logiciel diplômée d'ESPRIT. Spécialisée en développement Full Stack (Spring Boot, Angular) et Cloud FinOps.">
+  <meta name="keywords" content="Sourour Noumri, Génie Logiciel, Software Engineer, Spring Boot, Angular, FinOps, Cloud, Full Stack, ESPRIT, Tunis, Portfolio">
+  
+  <!-- Open Graph / LinkedIn Preview -->
+  <meta property="og:title" content="Sourour Noumri | Ingénieure en Génie Logiciel">
+  <meta property="og:description" content="Découvrez le portfolio créatif et professionnel de Sourour Noumri : Projets Full Stack, Cloud FinOps, Compétences et Parcours.">
+  <meta property="og:type" content="website">
+  
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Background -->
+  <div class="ambient-bg">
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+    <div class="blob-3"></div>
+  </div>
+  <div class="grid-pattern"></div>
+
+  <!-- NAVBAR GLASSMORPHISM -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <div class="logo-badge">
+          <img src="assets/images/sourour_noumri.jpg" alt="Sourour Noumri" class="logo-avatar-img" />
+        </div>
+        <span>Sourour <span class="gradient-text">Noumri</span></span>
+      </a>
+
+      <button id="menuToggleBtn" class="menu-toggle" aria-label="Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Parcours</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#education" data-i18n="nav.education">Formation</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="langToggleBtn" class="lang-btn" aria-label="Changer de langue">
+          <i class="fas fa-globe"></i> EN
+        </button>
+        <button id="themeToggleBtn" class="theme-btn" aria-label="Basculer le thème">
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION CREATIVE -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span data-i18n="hero.status_badge">À la recherche d'un premier emploi</span>
+        </div>
+        <h1 class="hero-title">Sourour <span class="gradient-text">Noumri</span></h1>
+        <h2 class="hero-subtitle" data-i18n="hero.subtitle">Ingénieure en Génie Logiciel</h2>
+        <p class="hero-tagline" data-i18n="hero.tagline">Spécialisée en Développement Full Stack (Spring Boot, Angular) & Architecture Cloud FinOps</p>
+        <p class="hero-bio" data-i18n="hero.bio">Ingénieure en Génie Logiciel diplômée d'ESPRIT. Rigoureuse, curieuse et passionnée par l'innovation logicielle. Expérimentée dans la conception de plateformes web complexes, la modélisation de données et l'optimisation des coûts cloud.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">
+            <span data-i18n="hero.btn_projects">Explorer mes projets</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span data-i18n="hero.btn_contact">Me contacter</span>
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://linkedin.com/in/sourour-noumri-a26009311" target="_blank" class="social-link">
+            <i class="fab fa-linkedin" style="color: #38bdf8;"></i> LinkedIn
+          </a>
+          <a href="mailto:noumrisourour@gmail.com" class="social-link">
+            <i class="fas fa-at" style="color: #6366f1;"></i> noumrisourour@gmail.com
+          </a>
+          <a href="tel:+21653700016" class="social-link">
+            <i class="fas fa-phone" style="color: #a855f7;"></i> +216 53 700 016
+          </a>
+        </div>
+      </div>
+
+      <!-- LARGE PORTRAIT SHOWCASE (CREATIVE RIGHT COLUMN) -->
+      <div class="hero-portrait-showcase glass-card" id="portraitShowcaseCard">
+        <div class="portrait-frame">
+          <img src="assets/images/sourour_noumri.jpg" alt="Sourour Noumri - Ingénieure en Génie Logiciel" class="portrait-showcase-img" />
+          <div class="portrait-overlay-gradient"></div>
+          <div class="portrait-badge-overlay">
+            <span class="badge-title">Sourour Noumri</span>
+            <span class="badge-sub"><i class="fas fa-mouse-pointer"></i> Survolez ou cliquez pour présenter</span>
+          </div>
+
+          <!-- REVEAL PRESENTATION OVERLAY PANEL -->
+          <div class="portrait-reveal-panel">
+            <h3 class="reveal-title">Sourour Noumri</h3>
+            <p class="reveal-role">Ingénieure en Génie Logiciel</p>
+            <div class="reveal-divider"></div>
+            <div class="reveal-info-list">
+              <div class="reveal-info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>ESPRIT (Génie Logiciel 2026)</span>
+              </div>
+              <div class="reveal-info-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Stage PFE Value (FinOps Reflexion)</span>
+              </div>
+              <div class="reveal-info-item">
+                <i class="fas fa-layer-group"></i>
+                <span>Spring Boot • Angular • C++ • FinOps</span>
+              </div>
+              <div class="reveal-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Tunis, Tunisie</span>
+              </div>
+              <div class="reveal-info-item">
+                <i class="fas fa-envelope"></i>
+                <span>noumrisourour@gmail.com</span>
+              </div>
+            </div>
+            <a href="#contact" class="reveal-btn">
+              <span>Me contacter</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="about.title">À propos de moi</h2>
+        <p class="section-subtitle" data-i18n="about.subtitle">Profil & Philosophie d'Ingénierie</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card-box glass-card">
+          <div class="about-text">
+            <p data-i18n="about.p1">Mon parcours à l'École Supérieure Privée d'Ingénierie et de Technologie (ESPRIT) combiné à mes stages techniques m'a permis d'acquérir une solide maîtrise de l'ingénierie logicielle moderne.</p>
+            <p data-i18n="about.p2">Lors de mon stage de fin d'études chez Value, j'ai conçu la plateforme FinOps Reflexion pour le pilotage et l'optimisation des coûts cloud. Mon expérience associe rigueur algorithmique, architecture back-end robuste (Spring Boot, Symfony, C++) et interfaces front-end réactives (Angular, Qt, Web).</p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <div class="stat-number">5</div>
+            <div class="stat-label" data-i18n="about.stat_years">Années d'Études</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number">6</div>
+            <div class="stat-label" data-i18n="about.stat_projects">Projets Majeurs</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label" data-i18n="about.stat_tech">Technologies</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="skills.title">Compétences Techniques</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">Stacks & Maîtrises Technologiques</p>
+      </div>
+
+      <div class="skills-controls">
+        <div class="skills-search">
+          <i class="fas fa-search"></i>
+          <input type="text" id="skillSearchInput" placeholder="Rechercher une compétence..." data-i18n="skills.search_placeholder" />
+        </div>
+
+        <div class="filter-pills">
+          <button class="pill-btn active" data-filter="all" data-i18n="skills.filter_all">Toutes</button>
+          <button class="pill-btn" data-filter="lang" data-i18n="skills.filter_lang">Langages</button>
+          <button class="pill-btn" data-filter="frameworks" data-i18n="skills.filter_frameworks">Frameworks & Dev</button>
+          <button class="pill-btn" data-filter="cloud" data-i18n="skills.filter_cloud">Cloud & FinOps</button>
+          <button class="pill-btn" data-filter="db" data-i18n="skills.filter_db">Bases de données & BI</button>
+          <button class="pill-btn" data-filter="tools" data-i18n="skills.filter_tools">Outils & No-Code</button>
+        </div>
+      </div>
+
+      <div id="skillsGrid" class="skills-grid">
+        <!-- Rendered dynamically via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="experience.title">Parcours Professionnel</h2>
+        <p class="section-subtitle" data-i18n="experience.subtitle">Expériences en Entreprise & Stages</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1: Value -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title" data-i18n="experience.roles.value.title">Stagiaire Ingénieure Full Stack (PFE)</h3>
+                <div class="company-name" data-i18n="experience.roles.value.company">Value | Tunis</div>
+              </div>
+              <span class="role-date" data-i18n="experience.roles.value.date">01/2026 – 07/2026</span>
+            </div>
+            <p class="role-desc" data-i18n="experience.roles.value.desc">Développement de la plateforme intelligente FinOps Reflexion dédiée au pilotage des coûts cloud.</p>
+            <ul class="role-details-list">
+              <li data-i18n="experience.roles.value.details.0">Conception & développement Full Stack (back-end Spring Boot, front-end Angular) de la plateforme FinOps Reflexion.</li>
+              <li data-i18n="experience.roles.value.details.1">Modélisation des données de coûts cloud et intégration d'APIs de métriques d'infrastructure.</li>
+              <li data-i18n="experience.roles.value.details.2">Mise en place de tableaux de bord interactifs d'analyse pour le suivi des KPI et recommandations d'optimisation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2: Biat IT -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title" data-i18n="experience.roles.biat.title">Stagiaire en Développement Logiciel</h3>
+                <div class="company-name" data-i18n="experience.roles.biat.company">Biat IT | Tunis</div>
+              </div>
+              <span class="role-date" data-i18n="experience.roles.biat.date">2025</span>
+            </div>
+            <p class="role-desc" data-i18n="experience.roles.biat.desc">Conception et développement d'un système de gestion de demandes pour BIAT.</p>
+            <ul class="role-details-list">
+              <li data-i18n="experience.roles.biat.details.0">Conception et développement d'une application interne de gestion et suivi des demandes opérationnelles pour la BIAT.</li>
+              <li data-i18n="experience.roles.biat.details.1">Optimisation des performances applicatives, gestion du workflow des requêtes et refactorisation de code.</li>
+              <li data-i18n="experience.roles.biat.details.2">Participation active aux cérémonies agiles et travail collaboratif en équipe.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 3: Auxesia -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title" data-i18n="experience.roles.auxesia.title">Stagiaire en Développement Web</h3>
+                <div class="company-name" data-i18n="experience.roles.auxesia.company">Auxesia Creative Agency | Tunis</div>
+              </div>
+              <span class="role-date" data-i18n="experience.roles.auxesia.date">2023</span>
+            </div>
+            <p class="role-desc" data-i18n="experience.roles.auxesia.desc">Développement de plateformes digitales et intégration web.</p>
+            <ul class="role-details-list">
+              <li data-i18n="experience.roles.auxesia.details.0">Création et maintenance de plateformes web dynamiques avec intégration front-end réactive.</li>
+              <li data-i18n="experience.roles.auxesia.details.1">Optimisation du référencement naturel (SEO) et amélioration de la vitesse de chargement.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 4: Le Zink -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title" data-i18n="experience.roles.lezink.title">Vendeuse & Relation Client</h3>
+                <div class="company-name" data-i18n="experience.roles.lezink.company">Le Zink / Pard'Ice | Tunis</div>
+              </div>
+              <span class="role-date" data-i18n="experience.roles.lezink.date">2020</span>
+            </div>
+            <p class="role-desc" data-i18n="experience.roles.lezink.desc">Gestion des opérations de vente et relation client dans un cadre dynamique.</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Createam -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title" data-i18n="experience.roles.createam.title">Stagiaire en Communication Publicitaire</h3>
+                <div class="company-name" data-i18n="experience.roles.createam.company">Createam | Tunis</div>
+              </div>
+              <span class="role-date" data-i18n="experience.roles.createam.date">2020</span>
+            </div>
+            <p class="role-desc" data-i18n="experience.roles.createam.desc">Création de visuels et gestion de communication digitale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="projects.title">Projets Majeurs</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Réalisations d'Ingénierie & Applications</p>
+      </div>
+
+      <div id="projectFilters" class="filter-pills" style="margin-bottom: 36px;">
+        <button class="pill-btn active" data-filter="all" data-i18n="projects.filter_all">Tous les projets</button>
+        <button class="pill-btn" data-filter="fullstack" data-i18n="projects.filter_fullstack">Full Stack & Web</button>
+        <button class="pill-btn" data-filter="cloud" data-i18n="projects.filter_cloud">Cloud & Analytics</button>
+        <button class="pill-btn" data-filter="desktop" data-i18n="projects.filter_desktop">Desktop & C++</button>
+      </div>
+
+      <div id="projectsGrid" class="projects-grid">
+        <!-- Projet 1 : FinOps Reflexion -->
+        <div class="project-card glass-card">
+          <div class="project-body">
+            <span class="project-tag">Full Stack / Cloud / Value PFE</span>
+            <h3 class="project-title">FinOps Reflexion</h3>
+            <p class="project-short">Plateforme intelligente de pilotage, modélisation et suivi en temps réel des dépenses multi-cloud.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">Angular</span>
+              <span class="tech-badge">Cloud API</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+            <button class="btn-details" onclick="openProjectModal('p1')">
+              <span data-i18n="projects.btn_details">Fiche technique</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Projet 2 : Coding Factory -->
+        <div class="project-card glass-card">
+          <div class="project-body">
+            <span class="project-tag">Full Stack / Éducation</span>
+            <h3 class="project-title">Coding Factory</h3>
+            <p class="project-short">Plateforme collaborative d'apprentissage en ligne avec forum interactif et statistiques d'utilisation.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Angular</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">REST API</span>
+            </div>
+            <button class="btn-details" onclick="openProjectModal('p2')">
+              <span data-i18n="projects.btn_details">Fiche technique</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Projet 3 : KoolArt -->
+        <div class="project-card glass-card">
+          <div class="project-body">
+            <span class="project-tag">Web & Enterprise / Art Culinaire</span>
+            <h3 class="project-title">KoolArt</h3>
+            <p class="project-short">Plateforme de gestion d'événements culinaires, système de réservation et notifications ciblées.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">Symfony</span>
+            </div>
+            <button class="btn-details" onclick="openProjectModal('p3')">
+              <span data-i18n="projects.btn_details">Fiche technique</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Projet 4 : Electrify -->
+        <div class="project-card glass-card">
+          <div class="project-body">
+            <span class="project-tag">Desktop & C++ / IoT</span>
+            <h3 class="project-title">Electrify</h3>
+            <p class="project-short">Logiciel de supervision et de contrôle des bornes de recharge pour véhicules électriques.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">C++</span>
+              <span class="tech-badge">Qt Framework</span>
+              <span class="tech-badge">UI Design</span>
+            </div>
+            <button class="btn-details" onclick="openProjectModal('p4')">
+              <span data-i18n="projects.btn_details">Fiche technique</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Projet 5 : BIAT -->
+        <div class="project-card glass-card">
+          <div class="project-body">
+            <span class="project-tag">Full Stack & Web / BIAT IT</span>
+            <h3 class="project-title">Système de Gestion de Demandes pour BIAT</h3>
+            <p class="project-short">Application logicielle interne pour la centralisation, le traitement et le suivi des demandes opérationnelles.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">Software Engineering</span>
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Web API</span>
+            </div>
+            <button class="btn-details" onclick="openProjectModal('p5')">
+              <span data-i18n="projects.btn_details">Fiche technique</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Projet 6 : Jeu 2D en C -->
+        <div class="project-card glass-card">
+          <div class="project-body">
+            <span class="project-tag">C / Game Dev</span>
+            <h3 class="project-title">Jeu 2D Interactif avec IA en C</h3>
+            <p class="project-short">Jeu 2D développé en C avec la bibliothèque SDL et des comportements d'intelligence artificielle.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">C</span>
+              <span class="tech-badge">SDL Library</span>
+              <span class="tech-badge">AI Physics</span>
+            </div>
+            <button class="btn-details" onclick="openProjectModal('p6')">
+              <span data-i18n="projects.btn_details">Fiche technique</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & LANGUAGES SECTION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="education.title">Formation & Langues</h2>
+        <p class="section-subtitle" data-i18n="education.subtitle">Diplôme, Certifications & Engagement</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card glass-card">
+          <i class="fas fa-university" style="font-size: 2.2rem; color: var(--accent-cyan); margin-bottom: 16px;"></i>
+          <h3 class="edu-title" data-i18n="education.esprit_title">Diplôme d'Ingénieur en Génie Logiciel</h3>
+          <div class="edu-school" data-i18n="education.esprit_school">École Supérieure Privée d'Ingénierie et de Technologie (ESPRIT)</div>
+          <div class="edu-years" data-i18n="education.esprit_years">2021 – 2026</div>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;" data-i18n="education.esprit_desc">Formation approfondie en génie logiciel, architecture logicielle, bases de données, systèmes distribués et méthodes agiles.</p>
+        </div>
+
+        <div class="edu-card glass-card">
+          <h3 class="edu-title" data-i18n="education.languages_title" style="margin-bottom: 14px;">Maîtrise des Langues</h3>
+          <div class="language-list">
+            <div class="lang-item"><i class="fas fa-check-circle"></i> <span data-i18n="education.lang_fr">Français : Bilingue</span></div>
+            <div class="lang-item"><i class="fas fa-check-circle"></i> <span data-i18n="education.lang_en">Anglais : Avancé</span></div>
+            <div class="lang-item"><i class="fas fa-check-circle"></i> <span data-i18n="education.lang_ar">Arabe : Langue maternelle</span></div>
+            <div class="lang-item"><i class="fas fa-check-circle"></i> <span data-i18n="education.lang_tr">Turc : Intermédiaire</span></div>
+          </div>
+
+          <h3 class="edu-title" data-i18n="education.volunteering_title" style="margin-top: 28px; margin-bottom: 14px;">Engagement Associatif</h3>
+          <div class="vol-list">
+            <div class="vol-item"><i class="fas fa-hands-helping"></i> <span data-i18n="education.vol_lions">Lions Phoenix Sud (2022 – 2025) - Membre actif</span></div>
+            <div class="vol-item"><i class="fas fa-users"></i> <span data-i18n="education.vol_interact">Interact Club Cosmopolitain (2018 – 2020) - Bureau exécutif</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="contact.title">Me Contacter</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Discutons de vos projets ou d'une opportunité</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-list">
+          <!-- Email Card -->
+          <div class="contact-info-card glass-card" onclick="copyToClipboard('noumrisourour@gmail.com', 'contact.form_copied')">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail">
+              <label data-i18n="contact.email_label">Email direct</label>
+              <a href="mailto:noumrisourour@gmail.com">noumrisourour@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-detail">
+              <label data-i18n="contact.phone_label">Téléphone</label>
+              <a href="tel:+21653700016">+216 53 700 016</a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-detail">
+              <label data-i18n="contact.linkedin_label">Profil LinkedIn</label>
+              <a href="https://linkedin.com/in/sourour-noumri-a26009311" target="_blank">sourour-noumri</a>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail">
+              <label data-i18n="contact.location_label">Localisation</label>
+              <span data-i18n="hero.location">Tunis, Tunisie</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="contact-form-card glass-card">
+          <form id="portfolioContactForm">
+            <div class="form-group">
+              <label data-i18n="contact.form_name">Votre Nom</label>
+              <input type="text" id="contactName" required placeholder="Nom complet..." />
+            </div>
+            <div class="form-group">
+              <label data-i18n="contact.form_email">Votre Email</label>
+              <input type="email" id="contactEmail" required placeholder="email@exemple.com..." />
+            </div>
+            <div class="form-group">
+              <label data-i18n="contact.form_subject">Sujet de votre message</label>
+              <input type="text" id="contactSubject" required placeholder="Proposition de poste / Projet..." />
+            </div>
+            <div class="form-group">
+              <label data-i18n="contact.form_message">Message</label>
+              <textarea id="contactMessage" required placeholder="Votre message..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              <span data-i18n="contact.form_submit">Envoyer le message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Sourour Noumri. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+      <p style="margin-top: 6px; font-size: 0.82rem;" data-i18n="footer.designed_by">Ingénieure en Génie Logiciel - ESPRIT 2026</p>
+    </div>
+  </footer>
+
+  <!-- MODAL DE PROJET -->
+  <div id="projectModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()" aria-label="Fermer"><i class="fas fa-times"></i></button>
+      <div id="modalCardBody">
+        <!-- Rendered dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotification" class="toast">
+    <i class="fas fa-info-circle"></i>
+    <span class="toast-msg">Notification</span>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
