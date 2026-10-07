@@ -6,30 +6,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* Dark Theme (Default Creative Tech Vibe - Indigo & Cyan Glow) */
-  --bg-dark: #080c14;
-  --bg-card: rgba(15, 23, 42, 0.75);
-  --bg-card-hover: rgba(30, 41, 59, 0.85);
-  --bg-subtle: rgba(30, 41, 59, 0.5);
+  /* Dark Theme (Rose Gold & Midnight Velvet) */
+  --bg-dark: #0d0914;
+  --bg-card: rgba(22, 16, 34, 0.8);
+  --bg-card-hover: rgba(35, 25, 54, 0.9);
+  --bg-subtle: rgba(35, 25, 54, 0.55);
   
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-primary: #fdf4f8;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
   
-  --accent-cyan: #38bdf8;
-  --accent-indigo: #6366f1;
-  --accent-violet: #a855f7;
-  --accent-emerald: #34d399;
+  --accent-cyan: #f472b6;    /* Rose Gold Pink */
+  --accent-indigo: #e11d48;  /* Deep Rose Crimson */
+  --accent-violet: #a855f7;  /* Velvet Violet */
+  --accent-emerald: #fb7185; /* Soft Rose */
   
-  --gradient-main: linear-gradient(135deg, #38bdf8 0%, #6366f1 50%, #a855f7 100%);
-  --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
-  --gradient-glow: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  --gradient-main: linear-gradient(135deg, #f472b6 0%, #e11d48 50%, #a855f7 100%);
+  --gradient-card: linear-gradient(135deg, rgba(244, 114, 182, 0.08) 0%, rgba(168, 85, 247, 0.02) 100%);
+  --gradient-glow: radial-gradient(circle, rgba(225, 29, 72, 0.2) 0%, transparent 70%);
 
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(56, 189, 248, 0.4);
+  --border-color: rgba(244, 114, 182, 0.15);
+  --border-glow: rgba(244, 114, 182, 0.45);
   
-  --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.2);
-  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 35px rgba(225, 29, 72, 0.25);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.6);
 
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -42,30 +42,30 @@
 }
 
 [data-theme="light"] {
-  /* Light Theme (Creative Ice Blue & Indigo) */
-  --bg-dark: #f8fafc;
-  --bg-card: rgba(255, 255, 255, 0.85);
+  /* Light Theme (Rose Gold & Soft Velvet Blush) */
+  --bg-dark: #fdf6f9;
+  --bg-card: rgba(255, 255, 255, 0.9);
   --bg-card-hover: #ffffff;
-  --bg-subtle: #f1f5f9;
+  --bg-subtle: #fce7f3;
   
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-primary: #2d0c1e;
+  --text-secondary: #5c1d3c;
+  --text-muted: #8b3a62;
   
-  --accent-cyan: #0284c7;
-  --accent-indigo: #4f46e5;
-  --accent-violet: #9333ea;
-  --accent-emerald: #059669;
+  --accent-cyan: #e11d48;    /* Deep Rose Crimson */
+  --accent-indigo: #db2777;  /* Rose Gold Pink */
+  --accent-violet: #9333ea;  /* Velvet Purple */
+  --accent-emerald: #f43f5e; /* Rose Coral */
   
-  --gradient-main: linear-gradient(135deg, #0284c7 0%, #4f46e5 50%, #9333ea 100%);
-  --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(241,245,249,0.7) 100%);
-  --gradient-glow: radial-gradient(circle, rgba(79, 70, 229, 0.1) 0%, transparent 70%);
+  --gradient-main: linear-gradient(135deg, #e11d48 0%, #db2777 50%, #9333ea 100%);
+  --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(252, 231, 243, 0.6) 100%);
+  --gradient-glow: radial-gradient(circle, rgba(225, 29, 72, 0.12) 0%, transparent 70%);
 
-  --border-color: #e2e8f0;
-  --border-glow: rgba(79, 70, 229, 0.4);
+  --border-color: #fbcfe8;
+  --border-glow: rgba(225, 29, 72, 0.4);
   
-  --shadow-glow: 0 10px 30px rgba(79, 70, 229, 0.12);
-  --shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.08);
+  --shadow-glow: 0 10px 30px rgba(225, 29, 72, 0.15);
+  --shadow-lg: 0 20px 40px rgba(45, 12, 30, 0.08);
 }
 
 /* Reset & Base Setup */
@@ -531,13 +531,13 @@ button {
   font-weight: 600;
 }
 
-/* Portrait Reveal Panel Overlay */
+/* Portrait Reveal Panel Overlay - Bright, Luminous & High Contrast */
 .portrait-reveal-panel {
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.94);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   padding: 30px 24px;
   display: flex;
   flex-direction: column;
@@ -547,6 +547,7 @@ button {
   transform: translateY(20px);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 5;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
 .hero-portrait-showcase:hover .portrait-reveal-panel,
@@ -557,22 +558,22 @@ button {
 }
 
 .reveal-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: #111827;
   margin-bottom: 4px;
 }
 
 .reveal-role {
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   font-weight: 700;
-  color: var(--accent-cyan);
+  color: #e11d48;
 }
 
 .reveal-divider {
   width: 40px;
-  height: 3px;
-  background: var(--gradient-main);
+  height: 4px;
+  background: linear-gradient(135deg, #f472b6, #e11d48, #a855f7);
   border-radius: var(--radius-full);
   margin: 14px 0;
 }
@@ -588,14 +589,14 @@ button {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  font-weight: 500;
+  font-size: 0.92rem;
+  color: #1e293b;
+  font-weight: 600;
 }
 
 .reveal-info-item i {
-  color: var(--accent-cyan);
-  font-size: 1rem;
+  color: #e11d48;
+  font-size: 1.1rem;
 }
 
 .reveal-btn {
@@ -603,13 +604,13 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 20px;
-  background: var(--gradient-main);
-  color: #ffffff;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #e11d48 0%, #db2777 50%, #9333ea 100%);
+  color: #ffffff !important;
   border-radius: var(--radius-full);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.4);
   transition: var(--transition);
 }
 
